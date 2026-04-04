@@ -10,28 +10,24 @@ body {
   font-family: Arial;
   background: #0d1117;
   color: white;
-  text-align: center;
 }
 
 .header {
   padding: 15px;
   background: #161b22;
+  text-align: center;
 }
 
-a.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 25px;
-  background: #22c55e;
-  color: black;
+a {
+  color: #22c55e;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 iframe {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   border: none;
 }
 </style>
@@ -40,28 +36,11 @@ iframe {
 <body>
 
 <div class="header">
-  <a href="dashboard.html">⬅ Volver</a>
+  <a href="dashboard.html">⬅ Volver al Dashboard</a>
   <h2>📊 Predictor Inteligente</h2>
 </div>
 
-<div id="contenido"></div>
-
-<script>
-const esMovil = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-if (esMovil) {
-  document.getElementById("contenido").innerHTML = `
-    <iframe src="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app"></iframe>
-  `;
-} else {
-  document.getElementById("contenido").innerHTML = `
-    <p>Para una mejor experiencia, abre el predictor en pantalla completa.</p>
-    <a class="btn" href="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app" target="_blank">
-      Abrir Predictor
-    </a>
-  `;
-}
-</script>
+<iframe src="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app"></iframe>
 
 </body>
 </html>
