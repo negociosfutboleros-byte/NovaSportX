@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Sport | Panel</title>
+
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d1117;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #30363d;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⚽ Nova Sport</h1>
+<p style="text-align:center;">Acceso a herramientas y contenido</p>
+
+<div class="grid">
+
+<a href="predictor.html">
+<div class="card">
+<h2>📊 Predictor</h2>
+<p>Analiza partidos y detecta valor</p>
+</div>
+</a>
+
+<a href="cursos.html">
+<div class="card">
+<h2>🎓 Cursos</h2>
+<p>Aprende el sistema completo</p>
+</div>
+</a>
+
+<a href="biblioteca.html">
+<div class="card">
+<h2>📚 Biblioteca</h2>
+<p>Libros y estrategias</p>
+</div>
+</a>
+
+<a href="herramientas.html">
+<div class="card">
+<h2>🧠 Herramientas</h2>
+<p>Recursos y descargas</p>
+</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
