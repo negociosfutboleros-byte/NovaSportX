@@ -2,43 +2,54 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Biblioteca Nova Sport X</title>
+<title>Biblioteca Nova Sport</title>
 
 <style>
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #0d1117;
-  color: #e6edf3;
+  color: white;
   margin: 0;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 30px;
 }
 
-h1 {
-  text-align: center;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
 .card {
   background: #161b22;
-  padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  overflow: hidden;
+  text-align: center;
   border: 1px solid #30363d;
+  transition: 0.2s;
 }
 
-iframe {
+.card:hover {
+  transform: scale(1.05);
+}
+
+img {
   width: 100%;
-  border-radius: 10px;
-  margin-top: 15px;
+  height: 250px;
+  object-fit: cover;
+}
+
+h3 {
+  padding: 10px;
 }
 
 a {
-  color: #22c55e;
   text-decoration: none;
+  color: white;
 }
 </style>
 </head>
@@ -47,50 +58,32 @@ a {
 
 <div class="container">
 
-<a href="dashboard.html">⬅ Volver al inicio</a>
+<a href="dashboard.html">⬅ Volver a inicio</a>
 
 <h1>📚 Biblioteca Nova Sport X</h1>
 
-<div class="card">
+<div class="grid">
 
+<a href="https://1drv.ms/b/c/b64705d8b023ca57/IQCJcK_7qcOcR48mPbR4pdt-AdxhlrwtLJudYjcCoUyDvCM?e=P9d7LC" target="_blank">
 <div class="card">
-<h3>📘 Primeros pasos</h3>
-<p>Mini e-book: Método Futbolero Lite</p>
-<a href="https://1drv.ms/b/c/b64705d8b023ca57/IQCJcK_7qcOcR48mPbR4pdt-AdxhlrwtLJudYjcCoUyDvCM?e=n8Bcl1">Leer</a>
+<img src="assets/libro1.jpg">
+<h3>Libro 1</h3>
 </div>
+</a>
 
-
-<p>Módulo 2: Lo que Nadie te Enseña sobre Apostar Bien</p>
-
-<iframe height="400"
-src="https://www.youtube.com/embed/WaK3z2Ds5Bw">
-</iframe>
-
-<p>Módulo 3: La Estrategia Oculta para Ganar Consistentemente (Parte 1)</p>
-
-<iframe height="400"
-src="https://www.youtube.com/embed/MKm8AkoqNS4">
-</iframe>
-
-<p>Módulo 4: ¡NO USES LA ESTRATEGIA! ⚠️ Aplica esto antes!! (Parte 2)</p>
-
-<iframe height="400"
-src="https://www.youtube.com/embed/GWc2M5-muhw">
-</iframe>
+<a href="LINK_PDF2" target="_blank">
+<div class="card">
+<img src="assets/libro2.jpg">
+<h3>Libro 2</h3>
+</div>
+</a>
 
 </div>
 
-<div class="card">
-<h2>Curso 2: Estrategia</h2>
-
-<p>Módulo 1</p>
-
-<iframe height="400"
-src="https://www.youtube.com/embed/VIDEO_ID">
-</iframe>
-
 </div>
 
+</body>
+</html>
 </div>
 
 </body>
