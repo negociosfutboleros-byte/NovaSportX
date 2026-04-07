@@ -18,22 +18,15 @@ body {
   padding: 30px;
 }
 
-.header {
+h1 {
   text-align: center;
-  margin-bottom: 30px;
-}
-
-a.back {
-  color: #22c55e;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 15px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  margin-top: 30px;
 }
 
 .card {
@@ -41,40 +34,52 @@ a.back {
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #30363d;
+  transition: 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: #22c55e;
+  transform: scale(1.03);
 }
 
-.card h3 {
+h3 {
   margin-top: 0;
 }
 
-.card p {
+p {
   color: #9da5b4;
-  font-size: 0.95em;
 }
 
 .btn {
   margin-top: 15px;
   padding: 12px;
+  text-align: center;
   background: #22c55e;
   color: black;
-  text-align: center;
-  border-radius: 8px;
   text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
   transition: 0.2s;
 }
 
 .btn:hover {
   background: #16a34a;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #22c55e;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #6b7280;
+  font-size: 0.9em;
 }
 </style>
 </head>
@@ -85,37 +90,39 @@ a.back {
 
 <a href="dashboard.html" class="back">⬅ Volver al Dashboard</a>
 
-<div class="header">
 <h1>🧠 Herramientas Nova Sport</h1>
-<p>Recursos prácticos para mejorar tu toma de decisiones</p>
-</div>
+<p style="text-align:center;">Recursos prácticos para mejorar tus decisiones</p>
 
 <div class="grid">
 
 <div class="card">
-<h3>📋 Estrategia +1.5 Goles en Vivo</h3>
-<p>Checklist + guía rápida para validar entradas en vivo con mayor precisión.</p>
-<a class="btn" href="https://1drv.ms/b/c/b64705d8b023ca57/IQAtwbxhylbIQogcCXKI73BgAcBa3tvQvtDrwrDpVpffosw?e=PhHHVE" target="_blank">
-Acceder
+<h3>📋 Checklist + Guía: +1.5 Goles en Vivo</h3>
+<p>Evalúa rápidamente si un partido tiene condiciones reales para entrar.</p>
+<a href="https://1drv.ms/b/c/b64705d8b023ca57/IQAtwbxhylbIQogcCXKI73BgAcBa3tvQvtDrwrDpVpffosw?e=PhHHVE" target="_blank" class="btn">
+Descargar
 </a>
 </div>
 
 <div class="card">
 <h3>🧠 Diario Emocional</h3>
-<p>Registra decisiones, errores y mejora tu control mental en apuestas.</p>
-<a class="btn" href="https://1drv.ms/b/c/b64705d8b023ca57/IQCWWtxM3U-rS6xMKYhSOW1MAZ2otDIewBmaZVsTStw6zEg?e=RZiKy6" target="_blank">
-Acceder
+<p>Registra decisiones y mejora tu control mental en cada apuesta.</p>
+<a href="https://1drv.ms/b/c/b64705d8b023ca57/IQCWWtxM3U-rS6xMKYhSOW1MAZ2otDIewBmaZVsTStw6zEg?e=RZiKy6" target="_blank" class="btn">
+Descargar
 </a>
 </div>
 
 <div class="card">
-<h3>📊 Guía Completa Apuestas</h3>
-<p>Base completa para construir tu sistema desde cero paso a paso.</p>
-<a class="btn" href="https://1drv.ms/b/c/b64705d8b023ca57/IQBpPJxJMVOjR7Rk_Wf9av-WAWil1MdvlU358oh9MdiKUHg?e=zSLW0g" target="_blank">
-Acceder
+<h3>📊 Guía Completa de Apuestas</h3>
+<p>Construye tu sistema desde cero con fundamentos sólidos.</p>
+<a href="https://1drv.ms/b/c/b64705d8b023ca57/IQBpPJxJMVOjR7Rk_Wf9av-WAWil1MdvlU358oh9MdiKUHg?e=zSLW0g" target="_blank" class="btn">
+Descargar
 </a>
 </div>
 
+</div>
+
+<div class="footer">
+<p>⚡ Actualizaciones constantes | Nuevas herramientas cada semana</p>
 </div>
 
 </div>
