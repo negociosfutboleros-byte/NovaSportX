@@ -2,33 +2,86 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Predictor X Pro - Nova Sport X</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #0d1117;
   color: white;
 }
 
+/* HEADER MÁS COMPACTO */
 .header {
-  padding: 15px;
+  padding: 10px;
   background: #161b22;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-a {
+.header a {
   color: #22c55e;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: 10px;
+  font-size: 14px;
 }
 
+.header h2 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+}
+
+/* CONTENEDOR APP */
+.app-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px); /* ocupa toda la pantalla menos header */
+}
+
+/* IFRAME OPTIMIZADO */
 iframe {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   border: none;
+}
+
+/* EFECTO PREMIUM (BARRA SUPERIOR) */
+.top-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #0066FF, #00FF66);
+  z-index: 10;
+}
+
+/* FOOTER LEGAL MÁS LIMPIO */
+.footer {
+  font-size: 10px;
+  color: #8b949e;
+  padding: 10px;
+  text-align: center;
+  background: #0d1117;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 14px;
+  }
+
+  .header a {
+    font-size: 12px;
+  }
 }
 </style>
 </head>
@@ -36,13 +89,25 @@ iframe {
 <body>
 
 <div class="header">
-  <a href="dashboard.html">⬅ Volver al Dashboard</a>
-  <h2>📊 Predictor Inteligente</h2>
+  <a href="dashboard.html">⬅</a>
+  <h2>📊 Predictor X</h2>
+  <div style="width:30px;"></div>
 </div>
 
-<iframe src="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app"></iframe>
+<div class="app-container">
+  <div class="top-overlay"></div>
 
+  <iframe 
+    src="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app"
+    allow="fullscreen"
+    loading="lazy">
+  </iframe>
+</div>
 
-<p>La información y herramientas disponibles en Nova Sport X tienen fines educativos e informativos. No constituyen asesoramiento financiero ni garantizan resultados. Las decisiones tomadas a partir de este contenido son responsabilidad exclusiva del usuario. Debido a la naturaleza digital del contenido y al acceso inmediato a la plataforma, no se realizan devoluciones ni reembolsos una vez efectuado el pago.<p>
+<div class="footer">
+  La información en Nova Sport X es educativa. No garantiza resultados. 
+  Las decisiones son responsabilidad del usuario. No hay reembolsos.
+</div>
+
 </body>
 </html>
