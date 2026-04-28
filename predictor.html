@@ -3,23 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Predictor X Pro - Nova Sport X</title>
+<title>Predictor X - NovaSport X</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #0d1117;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-/* HEADER MÁS COMPACTO */
+/* HEADER */
 .header {
-  padding: 10px;
+  padding: 15px;
   background: #161b22;
   display: flex;
   align-items: center;
@@ -35,53 +34,66 @@ body {
 .header h2 {
   margin: 0;
   font-size: 16px;
-  text-align: center;
+}
+
+/* CONTENIDO */
+.container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
-/* CONTENEDOR APP */
-.app-container {
-  position: relative;
+/* TARJETA PRINCIPAL */
+.card {
+  background: #161b22;
+  border-radius: 16px;
+  padding: 25px;
   width: 100%;
-  height: calc(100vh - 60px); /* ocupa toda la pantalla menos header */
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,255,100,0.1);
 }
 
-/* IFRAME OPTIMIZADO */
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+/* TÍTULO */
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
 }
 
-/* EFECTO PREMIUM (BARRA SUPERIOR) */
-.top-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
+/* TEXTO */
+.card p {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
   background: linear-gradient(90deg, #0066FF, #00FF66);
-  z-index: 10;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* FOOTER LEGAL MÁS LIMPIO */
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0,255,100,0.5);
+}
+
+/* FOOTER */
 .footer {
   font-size: 10px;
   color: #8b949e;
   padding: 10px;
   text-align: center;
-  background: #0d1117;
-}
-
-/* MOBILE OPTIMIZATION */
-@media (max-width: 768px) {
-  .header h2 {
-    font-size: 14px;
-  }
-
-  .header a {
-    font-size: 12px;
-  }
 }
 </style>
 </head>
@@ -89,24 +101,32 @@ iframe {
 <body>
 
 <div class="header">
-  <a href="dashboard.html">⬅</a>
+  <a href="dashboard.html">⬅ Volver</a>
   <h2>📊 Predictor X</h2>
-  <div style="width:30px;"></div>
 </div>
 
-<div class="app-container">
-  <div class="top-overlay"></div>
+<div class="container">
+  <div class="card">
+    
+    <h3>Accede al Predictor</h3>
+    
+    <p>
+      Analiza partidos, detecta oportunidades y toma decisiones con información real.
+    </p>
 
-  <iframe 
-    src="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app"
-    allow="fullscreen"
-    loading="lazy">
-  </iframe>
+    <a 
+      href="https://predictor-x-pro-v4-0-592273669616.us-west1.run.app" 
+      class="btn"
+      target="_blank"
+    >
+      🚀 Abrir Predictor
+    </a>
+
+  </div>
 </div>
 
 <div class="footer">
-  La información en Nova Sport X es educativa. No garantiza resultados. 
-  Las decisiones son responsabilidad del usuario. No hay reembolsos.
+  Uso educativo. No garantiza resultados.
 </div>
 
 </body>
